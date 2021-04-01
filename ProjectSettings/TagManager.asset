@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - cubeee
+  - trap2
+  - Jump
+  - ride
+  - trap
+  - trap1
+  - Block
   layers:
   - Default
   - TransparentFX
