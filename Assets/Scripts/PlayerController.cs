@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public GameObject bl;
     public float speed = 6.0F;
     public float jumpSpeed = 8.0F;
     public float waterSpeed = 1f;
@@ -65,12 +66,24 @@ public class PlayerController : MonoBehaviour
         {
             gravity = 20;
         }
+        if (col.tag == "Blur")
+        {
+            bl.SetActive(false);
+        }
+        else
+        {
+            bl.SetActive(true);
+        }
     }
     private void OnTriggerExit(Collider col)
     {
         if (col.tag == "Water")
         {
             gravity = 20;
+        }
+        if (col.tag == "Blur")
+        {
+            bl.SetActive(true);
         }
     }
 }
