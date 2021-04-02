@@ -70,10 +70,6 @@ public class PlayerController : MonoBehaviour
         {
             bl.SetActive(false);
         }
-        else
-        {
-            bl.SetActive(true);
-        }
     }
     private void OnTriggerExit(Collider col)
     {
