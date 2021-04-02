@@ -1,12 +1,37 @@
 fileFormatVersion: 2
-guid: 29fffdd9d4405f44aacc05f2f70449ac
+guid: 00c4e65cdf3d78b458e1a843ca99252d
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable:
   - first:
       74: -203655887218126122
     second: mixamo.com
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VanguardBodyMat
+    second: {fileID: 2100000, guid: 2bd22489651909e41832a90184247849, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Vanguard_VisorMat
+    second: {fileID: 2100000, guid: ff75cd9b466b12b47bb53bb68338a675, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: vanguard_diffuse
+    second: {fileID: 2800000, guid: c693130eced13e64bbdfbf52c52be4e5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: vanguard_normal
+    second: {fileID: 2800000, guid: 47d646de6024977429cca37815257ae5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: vanguard_specular
+    second: {fileID: 2800000, guid: afa2704a8915ff146ad92527b0a8cf7f, type: 3}
   materials:
     materialImportMode: 1
     materialName: 0
