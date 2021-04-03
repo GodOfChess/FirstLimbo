@@ -14,7 +14,7 @@ public class MainMenuController : MonoBehaviour
 
     public void ToChooseLevel()
     {
-        SceneManager.LoadScene(10);
+        SceneManager.LoadScene(2);
     }
 
     public void ToExit()
@@ -24,6 +24,6 @@ public class MainMenuController : MonoBehaviour
 
     public void ToSettings()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
     }
 }
