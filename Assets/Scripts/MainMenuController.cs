@@ -7,10 +7,9 @@ public class MainMenuController : MonoBehaviour
 {
     public GameObject settings;
 
-
     public void ToStartGame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(4);
     }
 
     public void ToChooseLevel()
