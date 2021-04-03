@@ -369,13 +369,24 @@ MonoBehaviour:
   m_FillRect: {fileID: 73871534}
   m_HandleRect: {fileID: 598185465}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 1
+  m_MinValue: 0.1
+  m_MaxValue: 2
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1894204202}
+        m_MethodName: ChangeSensivity
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &424371194
 GameObject:
   m_ObjectHideFlags: 0
@@ -1696,12 +1707,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   music: 0
   light: 0
+  sens: 0
   musicPlay: {fileID: 790819840}
   images:
   - {fileID: 21300000, guid: 082cea5835010c540bc5baff502cb05d, type: 3}
   - {fileID: 21300000, guid: cd384db999344b7448893815d46a1e1e, type: 3}
   musicobj: {fileID: 1970839640}
   brightSlider: {fileID: 836722944}
+  sensSlider: {fileID: 316083441}
 --- !u!4 &1894204203
 Transform:
   m_ObjectHideFlags: 0

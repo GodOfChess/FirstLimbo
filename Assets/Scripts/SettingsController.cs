@@ -7,16 +7,18 @@ using UnityEngine.SceneManagement;
 public class SettingsController : MonoBehaviour
 {
     [SerializeField] int music;
-    [SerializeField] float light;
+    [SerializeField] float light, sens;
     public AudioSource musicPlay;
     private Image imgMusic;
     public List<Sprite> images = new List<Sprite>();
     public GameObject musicobj;
-    public Slider brightSlider;
+    public Slider brightSlider, sensSlider;
     public void Start()
     {
         music = PlayerPrefs.GetInt("music");
         light = PlayerPrefs.GetFloat("light");
+        sens = PlayerPrefs.GetFloat("sens");
+        sensSlider.value = sens;
         brightSlider.value = light;
         imgMusic = musicobj.GetComponent<Image>();
         if (music == 1)
@@ -59,5 +61,10 @@ public class SettingsController : MonoBehaviour
     public void ChangeBright()
     {
         PlayerPrefs.SetFloat("light", brightSlider.value);
+    }
+
+    public void ChangeSensivity()
+    {
+        PlayerPrefs.SetFloat("sens", sensSlider.value);
     }
 }
