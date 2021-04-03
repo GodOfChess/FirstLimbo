@@ -316,6 +316,7 @@ GameObject:
   m_Component:
   - component: {fileID: 404066195}
   - component: {fileID: 404066194}
+  - component: {fileID: 404066196}
   m_Layer: 0
   m_Name: Water4SimpleReflectionMain Camera
   m_TagString: Untagged
@@ -373,13 +374,22 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 404066193}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.0132866, y: 7.8449984, z: 53.560947}
+  m_LocalRotation: {x: -0.07169545, y: 0.9059028, z: 0.1704661, w: 0.38097405}
+  m_LocalPosition: {x: -31.68096, y: -18.391827, z: 100.82046}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 993616349}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!45 &404066196
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404066193}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &479083934
 GameObject:
   m_ObjectHideFlags: 0
@@ -1137,7 +1147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.48065552, b: 0.49056602, a: 0.30588236}
+  m_Color: {r: 0.0102349585, g: 0.42734155, b: 0.4339623, a: 0.31764707}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1229,8 +1239,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1359253448}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.0132866, y: 7.8449984, z: 53.560947}
+  m_LocalRotation: {x: -0.07169545, y: 0.9059028, z: 0.1704661, w: 0.38097405}
+  m_LocalPosition: {x: -31.68096, y: -18.391827, z: 100.82046}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 993616349}
@@ -1458,6 +1468,16 @@ PrefabInstance:
     - target: {fileID: 4000010731693402, guid: 0d1adb20421ed664b800c8cf3d103e70, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000010118446818, guid: 0d1adb20421ed664b800c8cf3d103e70,
+        type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 198000010118446818, guid: 0d1adb20421ed664b800c8cf3d103e70,
+        type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d1adb20421ed664b800c8cf3d103e70, type: 3}
