@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 4dbd480039f60a344bdc0ff90b9d70b5
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Floor: {fileID: 165842, guid: 8d3b36f175a633f429d7bda54c76550d, type: 3}
+  - Wall: {fileID: 100000, guid: 338a423d70b874743b61e6bf69184e50, type: 3}
+  - Pillar: {fileID: 100000, guid: de815e9dc2d95a948939d83cfaa32a3d, type: 3}
+  - GoalPrefab: {fileID: 919132149155446097, guid: 3359de043fb79c642b1ba4bb29aa9509,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
