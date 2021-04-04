@@ -14,6 +14,7 @@ public class StartSceneController : MonoBehaviour
     public PlayerController controller;
     public Animator anim;
 
+
     void Start()
     {
         PlayerPrefs.SetInt("oxygen", oxygen);
@@ -32,8 +33,9 @@ public class StartSceneController : MonoBehaviour
         }
         txto2.text = "Кислород: " + oxygen.ToString();  
         if (oxygen < 1) 
-        {
+		{
             StopCoroutine(ChangeO2());
+
             controller.speed = 0;
             controller.jumpSpeed = 0;
             controller.waterSpeed = 0;

@@ -11,6 +11,7 @@ public class LockCanvas : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape) && !isOpen)
         {
+			Cursor.visible = true;
             canv.SetActive(true);
             isOpen = true;
         }

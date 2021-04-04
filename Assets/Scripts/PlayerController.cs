@@ -109,10 +109,6 @@ public class PlayerController : MonoBehaviour
 			audio2.Play();
 			isPlane2 = true;
 		}
-		if (col.tag == "End")
-		{
-
-		}
     }
     private void OnTriggerExit(Collider col)
     {
