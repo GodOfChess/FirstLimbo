@@ -74,7 +74,7 @@ public class PlayerController : MonoBehaviour
         }
         if (col.tag == "triggerlvl2")
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(4);
         }
     }
     private void OnTriggerExit(Collider col)
