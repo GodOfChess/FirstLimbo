@@ -8,7 +8,6 @@ public class SettingsController : MonoBehaviour
 {
     [SerializeField] int music;
     [SerializeField] float light, sens;
-    public AudioSource musicPlay;
     private Image imgMusic;
     public List<Sprite> images = new List<Sprite>();
     public GameObject musicobj;
@@ -21,10 +20,6 @@ public class SettingsController : MonoBehaviour
         sensSlider.value = sens;
         brightSlider.value = light;
         imgMusic = musicobj.GetComponent<Image>();
-        if (music == 1)
-        {
-            musicPlay.Play();
-        }
     }
     public void ToMenu()
     {
@@ -48,12 +43,10 @@ public class SettingsController : MonoBehaviour
         if (music == 1)
         {
             music = 0;
-            musicPlay.Stop();
         }
         else
         {
             music = 1;
-            musicPlay.Play();
         }
         PlayerPrefs.SetInt("music", music);
     }

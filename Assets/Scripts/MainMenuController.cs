@@ -9,12 +9,12 @@ public class MainMenuController : MonoBehaviour
 
     public void ToStartGame()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(3);
     }
 
     public void ToChooseLevel()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
 
     public void ToExit()
@@ -24,6 +24,6 @@ public class MainMenuController : MonoBehaviour
 
     public void ToSettings()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(2);
     }
 }

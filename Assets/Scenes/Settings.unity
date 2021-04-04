@@ -1611,7 +1611,6 @@ MonoBehaviour:
   music: 0
   light: 0
   sens: 0
-  musicPlay: {fileID: 0}
   images:
   - {fileID: 21300000, guid: 082cea5835010c540bc5baff502cb05d, type: 3}
   - {fileID: 21300000, guid: cd384db999344b7448893815d46a1e1e, type: 3}
