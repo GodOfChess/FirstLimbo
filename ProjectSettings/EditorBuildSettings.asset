@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HereWeStart.unity
     guid: 7f133297cdf7c1e40881375f7489d643
+  - enabled: 1
+    path: Assets/Scenes/firstlvl.unity
+    guid: d51f32f3207981d4abce17d8b182d650
   m_configObjects: {}
