@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-    public GameObject bl,bubble;
+    public GameObject bl,bubble , Etext, rychagTrue, rychagFalse;
     public float speed = 6.0F;
     public float jumpSpeed = 8.0F;
     public float waterSpeed = 1f;
@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     private Vector3 moveDirection = Vector3.zero;
     CharacterController controller;
     Animator anim;
+	public GameObject door;
+	private bool isOpen = false;
 
     private void Start()
     {
@@ -55,6 +57,17 @@ public class PlayerController : MonoBehaviour
                 moveDirection.y -= 3 * waterSpeed;
             }
         }
+		if (col.tag == "Rychag")
+		{
+			if (Input.GetKey(KeyCode.E))
+			{
+				rychagTrue.SetActive(true);
+				rychagFalse.SetActive(false);
+				door.SetActive(false);
+				Etext.SetActive(false);
+				isOpen = true;
+			}
+		}
     }
 
     private void OnTriggerEnter(Collider col)
@@ -72,10 +85,18 @@ public class PlayerController : MonoBehaviour
             bl.SetActive(false);
             bubble.SetActive(false);
         }
-        if (col.tag == "triggerlvl2")
-        {
-            SceneManager.LoadScene(4);
-        }
+		if (col.tag == "triggerlvl2")
+		{
+			SceneManager.LoadScene(4);
+		}
+		if (col.tag == "Rychag" && !isOpen)
+		{
+			Etext.SetActive(true);
+		}
+		else
+		{
+			Etext.SetActive(false);
+		}
     }
     private void OnTriggerExit(Collider col)
     {
@@ -88,5 +109,9 @@ public class PlayerController : MonoBehaviour
             bl.SetActive(true);
             bubble.SetActive(true);
         }
+		if (col.tag == "Rychag")
+		{
+			Etext.SetActive(false);
+		}
     }
 }

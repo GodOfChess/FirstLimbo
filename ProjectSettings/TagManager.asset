@@ -9,6 +9,8 @@ TagManager:
   - Blur
   - balon
   - triggerlvl2
+  - Floor
+  - Rychag
   layers:
   - Default
   - TransparentFX

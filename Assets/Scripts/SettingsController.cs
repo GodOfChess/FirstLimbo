@@ -8,6 +8,7 @@ public class SettingsController : MonoBehaviour
 {
     [SerializeField] int music;
     [SerializeField] float light, sens;
+
     private Image imgMusic;
     public List<Sprite> images = new List<Sprite>();
     public GameObject musicobj;
@@ -43,10 +44,12 @@ public class SettingsController : MonoBehaviour
         if (music == 1)
         {
             music = 0;
+
         }
         else
         {
             music = 1;
+
         }
         PlayerPrefs.SetInt("music", music);
     }
