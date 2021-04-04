@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class PlayerController : MonoBehaviour
 {
@@ -14,7 +15,8 @@ public class PlayerController : MonoBehaviour
     CharacterController controller;
     Animator anim;
 	public GameObject door;
-	private bool isOpen = false;
+	private bool isOpen = false, isPlane1 =false, isPlane2 =false;
+	public AudioSource audio1, audio2;
 
     private void Start()
     {
@@ -96,6 +98,20 @@ public class PlayerController : MonoBehaviour
 		else
 		{
 			Etext.SetActive(false);
+		}
+		if (col.tag == "plane1" && !isPlane1)
+		{
+			audio1.Play();
+			isPlane1 = true;
+		}
+		if (col.tag == "plane2" && !isPlane2)
+		{
+			audio2.Play();
+			isPlane2 = true;
+		}
+		if (col.tag == "End")
+		{
+
 		}
     }
     private void OnTriggerExit(Collider col)

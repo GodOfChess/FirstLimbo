@@ -11,6 +11,9 @@ TagManager:
   - triggerlvl2
   - Floor
   - Rychag
+  - plane1
+  - plane2
+  - End
   layers:
   - Default
   - TransparentFX

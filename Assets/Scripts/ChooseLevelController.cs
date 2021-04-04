@@ -12,14 +12,14 @@ public class ChooseLevelController : MonoBehaviour
 
     public void ToFirstLvl()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(3);
     }
     public void ToSecondLvl()
     {
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene(4);
     }
     public void ToThirdLvl()
     {
-        SceneManager.LoadScene(7);
+        SceneManager.LoadScene(5);
     }
 }
