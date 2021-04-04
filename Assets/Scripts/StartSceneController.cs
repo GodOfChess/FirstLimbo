@@ -35,7 +35,6 @@ public class StartSceneController : MonoBehaviour
         if (oxygen < 1) 
 		{
             StopCoroutine(ChangeO2());
-
             controller.speed = 0;
             controller.jumpSpeed = 0;
             controller.waterSpeed = 0;
